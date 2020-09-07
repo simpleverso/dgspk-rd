@@ -1,10 +1,13 @@
 //kb - eng
 #include "DigiKeyboard.h"
+#define KEY_DELETE 76
+
 void setup() {
   pinMode(1, OUTPUT);
 }
 void loop() {
   DigiKeyboard.delay(3000);
+  //DigiKeyboard.sendKeyStroke(KEY_DELETE, MOD_ALT_RIGHT | MOD_CONTROL_LEFT); //ctrl + alt + del
   //DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(800);
